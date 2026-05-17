@@ -84,3 +84,15 @@ a {
   text-align: right; 
  
 }
+
+/* Styling for general lists in your main content area */
+.page-content ul {
+  list-style-type: disc;     /* Forces clean, classic bullet points */
+  padding-left: 30px;        /* Indents the list away from the left edge */
+  margin-top: 15px;          /* Separates the list from the paragraph above it */
+}
+
+.page-content li {
+  margin-bottom: 12px;       /* Adds breathing room between each list item */
+  line-height: 1.6;          /* Keeps multi-line bullet points highly readable */
+}
