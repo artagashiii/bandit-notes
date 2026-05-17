@@ -1,0 +1,86 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/* Reset default margins */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* The parent wrapper holding both sides */
+.notebook-container {
+  display: flex;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #717171;
+}
+
+/* Left Side: Navbar */
+.sidebar {
+  width: 250px; /* Fixed width for your sidebar */
+  background-color: #037171;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.sidebar li a {
+  display: block;
+  padding: 10px;
+  color: #474f49;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sidebar li a.active, .sidebar li a:hover {
+  background-color: #00140331; /* Visual feedback for selected page */
+}
+
+/* Right Side: Page Content */
+.page-content {
+  flex: 1; /* Takes up all the remaining space on the right */
+  padding: 40px;
+  background-color: #03312E;
+  overflow-y: auto; /* Adds a scrollbar only to the content if it gets too long */
+}
+
+.blue {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #009f9242;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+h1,h2,h3,h4 { color: rgb(197, 199, 202);}
+
+p,li{color: #c4c3c7;}
+.bg-of-span{
+  
+  background-color: rgba(0, 0, 0, 0.148);
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* This makes the link keep your paragraphs' text color instead of turning default blue */
+}
+
+.page-end {
+  /* This trick pushes the ENTIRE div all the way to the right edge of your main container */
+  margin-left: auto; 
+  margin-top: 40px; /* Adds some breathing room below your previous paragraphs */
+  
+  /* This aligns the text and the link inside the div to the right */
+  text-align: right; 
+ 
+}

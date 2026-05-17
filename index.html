@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandit-Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notebook-container">
+  <div id="navbar" class="sidebar"></div>
+
+  <main class="page-content">
+   <h2 style="border-bottom: 5px solid rgba(127, 255, 212, 0.265); padding-bottom: 10px;">OverTheWire: Bandit</h2>
+    <h3>Student notes</h3>
+    <p>I've recently been interested in computer networks and cybersecurity, hence I wanted to document 
+      some of my journey. <br>
+      <br>
+    In these notes I'll be covering the things I learned along the completion of the game Overthewire Bandit.
+    </p>
+    
+ <div class="blue"> 
+  <h4>What exactly is OverTheWire: Bandit?</h4> 
+  <p>
+   <span class="bg-of-span"> OverTheWire: Bandit </span> is a popular, text-based wargame specifically designed for beginners 
+    to learn and practice the basics of security and Linux command-line operations. <br> <br>
+    Players progress through a series of levels by using terminal commands to find hidden
+     passwords, which are then used to log into the next, increasingly difficult level. <br> <br>
+      It is widely considered an essential, hands-on starting point
+       for anyone looking to get into cybersecurity,
+        Linux system administration, or Capture The Flag (CTF) competitions.
+  </p>
+ </div>
+ <div class="blue">
+ <h4>Things you will need if you want to test things out by yourself:</h4>
+ <p>Now, for the game itself, you can work on it in any terminal you want. <br> <br>
+  However! <br> <br>
+  If you don't use a linux OS you will not have direct access to the ready-made commands. <br>
+  <br>
+  So how to run linux without ruining your PC if you're not used to it? <br>
+  Well there are many ways, but I suggest using a <span class="bg-of-span"> Virtual Machine (VM) </span>. <br>
+  What is a VM? Essentially it's a mini computer inside your computer! <br>
+<br>
+<br>
+To work inside a VM, you install a manager like Oracle VirtualBox and set it up there. <br>
+There are a few manager options depending on your computer:
+
+<ul>
+  <li>Oracle VirtualBox: Completely free, open-source, and works perfectly on Windows and Mac. The best starting point!
+    <br>
+    (This is what I'll be using)
+  </li>
+  <li>VMware Workstation / Fusion: Industry-standard, super fast, and now completely free for personal use.</li>
+  <li>UTM: The absolute best, lightweight choice if you are using a modern Apple Silicon Mac.</li>
+</ul>
+
+</p>
+</div>
+
+<div class="page-end">
+<p>Are you ready? Let's get into it! >:D </p>
+<a href="/pages/page1.html"><span style="background-color: rgba(240, 248, 255, 0.374); padding: 10px; border-radius: 10px;"> Level 0 !</span> </a>
+</div>
+</main>
+
+  
+
+</div>
+  <script>
+    fetch('/components/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
