@@ -37,7 +37,11 @@ body {
   text-decoration: none;
   border-radius: 4px;
 }
-
+/* Target the links inside your navbar list items */
+.sidebar ul li a {
+    color: #c4cedb;          /* Changes the text color (e.g., a nice minty green) */
+    text-decoration: none;   /* Removes the default underline */
+}
 .sidebar li a.active, .sidebar li a:hover {
   background-color: #00140331; /* Visual feedback for selected page */
 }
