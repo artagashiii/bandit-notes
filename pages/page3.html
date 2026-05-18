@@ -16,11 +16,16 @@
   </main>
   </div>
 </body>
-  <script>
-    fetch('/components/navbar.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
+ <script>
+  // "../" moves up out of the pages folder so it can see the components folder
+  fetch('../components/navbar.html')
+    .then(res => {
+      if (!res.ok) throw new Error("Navbar file not found");
+      return res.text();
+    })
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    })
+    .catch(err => console.error(err));
+</script>
 </html>
