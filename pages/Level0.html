@@ -39,13 +39,13 @@
     </p>
     
     <p>This is all the knowledge required for the ground level of Bandit, however later in this file I'll be covering some other interresting commands in SSH. </p>
-  <p>P.S don't forget to type <span style="bg-of-span"> exit (or ctrl+D) </span> on the terminal to terminate the current SSH session, and move to the task.</p>
+  <p>P.S don't forget to type <span class="bg-of-span"> exit (or ctrl+D) </span> on the terminal to terminate the current SSH session, and move to the task.</p>
   </main>
   </div>
 </body>
 <script>
-  // "../" moves up out of the pages folder so it can see the components folder
-  fetch('../components/navbar.html')
+  
+  fetch('/bandit-notes/components/navbar.html')
     .then(res => {
       if (!res.ok) throw new Error("Navbar file not found");
       return res.text();
